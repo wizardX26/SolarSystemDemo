@@ -3,7 +3,7 @@
 GeometryLab là demo render 3D Hệ Mặt Trời viết bằng Swift + Metal cho iOS, tập trung vào pipeline render cơ bản, tổ chức scene theo node/renderer, và animation quỹ đạo theo thời gian thực.
 
 <p align="center">
-  <img src="SolarSystemDemo.gif" width="400"/>
+  <img src="GeometryLab/SolarSystemDemo.gif" width="400"/>
 </p>
  
 ### Tổng quan nhanh
