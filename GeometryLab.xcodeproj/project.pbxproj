@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D05A77E72F856A78006A34B6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D05A77E62F856A73006A34B6 /* README.md */; };
+		D05A77E92F856AA7006A34B6 /* SolarSystemDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D05A77E82F856AA7006A34B6 /* SolarSystemDemo.gif */; };
+		D0A1586B2EE29B7400E1FD51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158602EE29B7400E1FD51 /* AppDelegate.swift */; };
+		D0A1586C2EE29B7400E1FD51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158682EE29B7400E1FD51 /* ViewController.swift */; };
+		D0A1586D2EE29B7400E1FD51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A158662EE29B7400E1FD51 /* Main.storyboard */; };
+		D0A1586E2EE29B7400E1FD51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A158612EE29B7400E1FD51 /* Assets.xcassets */; };
+		D0A1586F2EE29B7400E1FD51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A158642EE29B7400E1FD51 /* LaunchScreen.storyboard */; };
+		D0A158752EE29C8E00E1FD51 /* MetalCommon.metal in Sources */ = {isa = PBXBuildFile; fileRef = D0A158742EE29C8E00E1FD51 /* MetalCommon.metal */; };
+		D0A158772EE29CC300E1FD51 /* GPUDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158762EE29CC300E1FD51 /* GPUDevice.swift */; };
+		D0A1587B2EE29D8000E1FD51 /* GridRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1587A2EE29D8000E1FD51 /* GridRenderer.swift */; };
+		D0A1587D2EE29D8E00E1FD51 /* AxisRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1587C2EE29D8E00E1FD51 /* AxisRenderer.swift */; };
+		D0A1587F2EE29D9A00E1FD51 /* TriangleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1587E2EE29D9A00E1FD51 /* TriangleRenderer.swift */; };
+		D0A158812EE29DB000E1FD51 /* Grid.metal in Sources */ = {isa = PBXBuildFile; fileRef = D0A158802EE29DB000E1FD51 /* Grid.metal */; };
+		D0A158832EE29DB500E1FD51 /* Axis.metal in Sources */ = {isa = PBXBuildFile; fileRef = D0A158822EE29DB500E1FD51 /* Axis.metal */; };
+		D0A158852EE29DBD00E1FD51 /* Triangle.metal in Sources */ = {isa = PBXBuildFile; fileRef = D0A158842EE29DBD00E1FD51 /* Triangle.metal */; };
+		D0A158882EE2B8C300E1FD51 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158872EE2B8C300E1FD51 /* MetalView.swift */; };
+		D0A1588A2EE2B8D900E1FD51 /* BaseRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158892EE2B8D900E1FD51 /* BaseRenderer.swift */; };
+		D0A1588E2EE2B91C00E1FD51 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1588D2EE2B91C00E1FD51 /* Matrix.swift */; };
+		D0A158902EE2B92300E1FD51 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1588F2EE2B92300E1FD51 /* Transform.swift */; };
+		D0A158922EE2B92A00E1FD51 /* GeometryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158912EE2B92A00E1FD51 /* GeometryUtils.swift */; };
+		D0A158952EE2B93700E1FD51 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158942EE2B93700E1FD51 /* Mesh.swift */; };
+		D0A158972EE2B93E00E1FD51 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158962EE2B93E00E1FD51 /* Triangle.swift */; };
+		D0A158992EE2B94500E1FD51 /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158982EE2B94500E1FD51 /* Axis.swift */; };
+		D0A158A02EE2BA6400E1FD51 /* MetalMath.metal in Sources */ = {isa = PBXBuildFile; fileRef = D0A1589F2EE2BA6400E1FD51 /* MetalMath.metal */; };
+		D0A158A22EE2BA6C00E1FD51 /* Noise.metal in Sources */ = {isa = PBXBuildFile; fileRef = D0A158A12EE2BA6C00E1FD51 /* Noise.metal */; };
+		D0A158A52EE2BACD00E1FD51 /* GridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158A42EE2BACD00E1FD51 /* GridNode.swift */; };
+		D0A158A72EE2BAD400E1FD51 /* AxisNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158A62EE2BAD400E1FD51 /* AxisNode.swift */; };
+		D0A158A92EE2BADC00E1FD51 /* MeshNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158A82EE2BADC00E1FD51 /* MeshNode.swift */; };
+		D0A158AB2EE2BAF600E1FD51 /* SceneRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158AA2EE2BAF600E1FD51 /* SceneRenderer.swift */; };
+		D0A158AD2EE2D80300E1FD51 /* MeshRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158AC2EE2D80300E1FD51 /* MeshRenderer.swift */; };
+		D0A158B12EE2DC3300E1FD51 /* PlanetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158AF2EE2DC3300E1FD51 /* PlanetData.swift */; };
+		D0A158B22EE2DC3300E1FD51 /* CelestialBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158AE2EE2DC3300E1FD51 /* CelestialBody.swift */; };
+		D0A158B42EE2DC6700E1FD51 /* Planet.metal in Sources */ = {isa = PBXBuildFile; fileRef = D0A158B32EE2DC6700E1FD51 /* Planet.metal */; };
+		D0A158B62EE2DD8C00E1FD51 /* PlanetRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158B52EE2DD8C00E1FD51 /* PlanetRenderer.swift */; };
+		D0A158B82EE2DEE500E1FD51 /* OrbitPathRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A158B72EE2DEE500E1FD51 /* OrbitPathRenderer.swift */; };
+		D0A158BA2EE2E2CA00E1FD51 /* OrbitPath.metal in Sources */ = {isa = PBXBuildFile; fileRef = D0A158B92EE2E2CA00E1FD51 /* OrbitPath.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D05A77E62F856A73006A34B6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D05A77E82F856AA7006A34B6 /* SolarSystemDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SolarSystemDemo.gif; sourceTree = "<group>"; };
+		D0A158482EE29B6500E1FD51 /* GeometryLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometryLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A158602EE29B7400E1FD51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0A158612EE29B7400E1FD51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0A158622EE29B7400E1FD51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0A158632EE29B7400E1FD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0A158652EE29B7400E1FD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0A158682EE29B7400E1FD51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0A158712EE29C1800E1FD51 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
+		D0A158722EE29C2A00E1FD51 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		D0A158732EE29C5500E1FD51 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		D0A158742EE29C8E00E1FD51 /* MetalCommon.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalCommon.metal; sourceTree = "<group>"; };
+		D0A158762EE29CC300E1FD51 /* GPUDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUDevice.swift; sourceTree = "<group>"; };
+		D0A1587A2EE29D8000E1FD51 /* GridRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridRenderer.swift; sourceTree = "<group>"; };
+		D0A1587C2EE29D8E00E1FD51 /* AxisRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisRenderer.swift; sourceTree = "<group>"; };
+		D0A1587E2EE29D9A00E1FD51 /* TriangleRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleRenderer.swift; sourceTree = "<group>"; };
+		D0A158802EE29DB000E1FD51 /* Grid.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Grid.metal; sourceTree = "<group>"; };
+		D0A158822EE29DB500E1FD51 /* Axis.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Axis.metal; sourceTree = "<group>"; };
+		D0A158842EE29DBD00E1FD51 /* Triangle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Triangle.metal; sourceTree = "<group>"; };
+		D0A158872EE2B8C300E1FD51 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		D0A158892EE2B8D900E1FD51 /* BaseRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRenderer.swift; sourceTree = "<group>"; };
+		D0A1588D2EE2B91C00E1FD51 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		D0A1588F2EE2B92300E1FD51 /* Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
+		D0A158912EE2B92A00E1FD51 /* GeometryUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryUtils.swift; sourceTree = "<group>"; };
+		D0A158942EE2B93700E1FD51 /* Mesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		D0A158962EE2B93E00E1FD51 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		D0A158982EE2B94500E1FD51 /* Axis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axis.swift; sourceTree = "<group>"; };
+		D0A1589F2EE2BA6400E1FD51 /* MetalMath.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalMath.metal; sourceTree = "<group>"; };
+		D0A158A12EE2BA6C00E1FD51 /* Noise.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Noise.metal; sourceTree = "<group>"; };
+		D0A158A42EE2BACD00E1FD51 /* GridNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridNode.swift; sourceTree = "<group>"; };
+		D0A158A62EE2BAD400E1FD51 /* AxisNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisNode.swift; sourceTree = "<group>"; };
+		D0A158A82EE2BADC00E1FD51 /* MeshNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshNode.swift; sourceTree = "<group>"; };
+		D0A158AA2EE2BAF600E1FD51 /* SceneRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRenderer.swift; sourceTree = "<group>"; };
+		D0A158AC2EE2D80300E1FD51 /* MeshRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshRenderer.swift; sourceTree = "<group>"; };
+		D0A158AE2EE2DC3300E1FD51 /* CelestialBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialBody.swift; sourceTree = "<group>"; };
+		D0A158AF2EE2DC3300E1FD51 /* PlanetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetData.swift; sourceTree = "<group>"; };
+		D0A158B32EE2DC6700E1FD51 /* Planet.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Planet.metal; sourceTree = "<group>"; };
+		D0A158B52EE2DD8C00E1FD51 /* PlanetRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRenderer.swift; sourceTree = "<group>"; };
+		D0A158B72EE2DEE500E1FD51 /* OrbitPathRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitPathRenderer.swift; sourceTree = "<group>"; };
+		D0A158B92EE2E2CA00E1FD51 /* OrbitPath.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = OrbitPath.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0A158452EE29B6500E1FD51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0A1583F2EE29B6500E1FD51 = {
+			isa = PBXGroup;
+			children = (
+				D0A158692EE29B7400E1FD51 /* GeometryLab */,
+				D0A158492EE29B6500E1FD51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0A158492EE29B6500E1FD51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0A158482EE29B6500E1FD51 /* GeometryLab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0A158692EE29B7400E1FD51 /* GeometryLab */ = {
+			isa = PBXGroup;
+			children = (
+				D0A158B02EE2DC3300E1FD51 /* Celestial */,
+				D0A158862EE2B8AD00E1FD51 /* Core */,
+				D0A158792EE29D6700E1FD51 /* Shader */,
+				D0A158782EE29D5F00E1FD51 /* Renderer */,
+				D0A1588C2EE2B91000E1FD51 /* Math */,
+				D0A158932EE2B93100E1FD51 /* Model */,
+				D0A1589A2EE2B97F00E1FD51 /* Scenes */,
+				D0A158602EE29B7400E1FD51 /* AppDelegate.swift */,
+				D0A158612EE29B7400E1FD51 /* Assets.xcassets */,
+				D0A158622EE29B7400E1FD51 /* Info.plist */,
+				D0A158642EE29B7400E1FD51 /* LaunchScreen.storyboard */,
+				D0A158662EE29B7400E1FD51 /* Main.storyboard */,
+				D0A158682EE29B7400E1FD51 /* ViewController.swift */,
+				D05A77E62F856A73006A34B6 /* README.md */,
+				D05A77E82F856AA7006A34B6 /* SolarSystemDemo.gif */,
+			);
+			path = GeometryLab;
+			sourceTree = "<group>";
+		};
+		D0A158782EE29D5F00E1FD51 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				D0A158B72EE2DEE500E1FD51 /* OrbitPathRenderer.swift */,
+				D0A158B52EE2DD8C00E1FD51 /* PlanetRenderer.swift */,
+				D0A158AC2EE2D80300E1FD51 /* MeshRenderer.swift */,
+				D0A1587A2EE29D8000E1FD51 /* GridRenderer.swift */,
+				D0A1587C2EE29D8E00E1FD51 /* AxisRenderer.swift */,
+				D0A1587E2EE29D9A00E1FD51 /* TriangleRenderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		D0A158792EE29D6700E1FD51 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				D0A1588B2EE2B8EE00E1FD51 /* Types */,
+				D0A1589E2EE2BA5B00E1FD51 /* Utils */,
+				D0A1589B2EE2BA2300E1FD51 /* Primitive */,
+				D0A1589D2EE2BA5200E1FD51 /* Lighting */,
+				D0A1589C2EE2BA4C00E1FD51 /* Materials */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		D0A158862EE2B8AD00E1FD51 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D0A158762EE29CC300E1FD51 /* GPUDevice.swift */,
+				D0A158872EE2B8C300E1FD51 /* MetalView.swift */,
+				D0A158892EE2B8D900E1FD51 /* BaseRenderer.swift */,
+				D0A158712EE29C1800E1FD51 /* bridging.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D0A1588B2EE2B8EE00E1FD51 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				D0A158732EE29C5500E1FD51 /* Common.h */,
+				D0A158722EE29C2A00E1FD51 /* ShaderTypes.h */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		D0A1588C2EE2B91000E1FD51 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				D0A1588D2EE2B91C00E1FD51 /* Matrix.swift */,
+				D0A1588F2EE2B92300E1FD51 /* Transform.swift */,
+				D0A158912EE2B92A00E1FD51 /* GeometryUtils.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		D0A158932EE2B93100E1FD51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0A158942EE2B93700E1FD51 /* Mesh.swift */,
+				D0A158962EE2B93E00E1FD51 /* Triangle.swift */,
+				D0A158982EE2B94500E1FD51 /* Axis.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0A1589A2EE2B97F00E1FD51 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D0A158A32EE2BAC100E1FD51 /* Nodes */,
+				D0A158AA2EE2BAF600E1FD51 /* SceneRenderer.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D0A1589B2EE2BA2300E1FD51 /* Primitive */ = {
+			isa = PBXGroup;
+			children = (
+				D0A158B92EE2E2CA00E1FD51 /* OrbitPath.metal */,
+				D0A158B32EE2DC6700E1FD51 /* Planet.metal */,
+				D0A158802EE29DB000E1FD51 /* Grid.metal */,
+				D0A158822EE29DB500E1FD51 /* Axis.metal */,
+				D0A158842EE29DBD00E1FD51 /* Triangle.metal */,
+			);
+			path = Primitive;
+			sourceTree = "<group>";
+		};
+		D0A1589C2EE2BA4C00E1FD51 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
+		D0A1589D2EE2BA5200E1FD51 /* Lighting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lighting;
+			sourceTree = "<group>";
+		};
+		D0A1589E2EE2BA5B00E1FD51 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D0A158742EE29C8E00E1FD51 /* MetalCommon.metal */,
+				D0A1589F2EE2BA6400E1FD51 /* MetalMath.metal */,
+				D0A158A12EE2BA6C00E1FD51 /* Noise.metal */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D0A158A32EE2BAC100E1FD51 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				D0A158A42EE2BACD00E1FD51 /* GridNode.swift */,
+				D0A158A62EE2BAD400E1FD51 /* AxisNode.swift */,
+				D0A158A82EE2BADC00E1FD51 /* MeshNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		D0A158B02EE2DC3300E1FD51 /* Celestial */ = {
+			isa = PBXGroup;
+			children = (
+				D0A158AE2EE2DC3300E1FD51 /* CelestialBody.swift */,
+				D0A158AF2EE2DC3300E1FD51 /* PlanetData.swift */,
+			);
+			path = Celestial;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0A158472EE29B6500E1FD51 /* GeometryLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0A1585B2EE29B6700E1FD51 /* Build configuration list for PBXNativeTarget "GeometryLab" */;
+			buildPhases = (
+				D0A158442EE29B6500E1FD51 /* Sources */,
+				D0A158452EE29B6500E1FD51 /* Frameworks */,
+				D0A158462EE29B6500E1FD51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeometryLab;
+			packageProductDependencies = (
+			);
+			productName = GeometryLab;
+			productReference = D0A158482EE29B6500E1FD51 /* GeometryLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0A158402EE29B6500E1FD51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D0A158472EE29B6500E1FD51 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = D0A158432EE29B6500E1FD51 /* Build configuration list for PBXProject "GeometryLab" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0A1583F2EE29B6500E1FD51;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D0A158492EE29B6500E1FD51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0A158472EE29B6500E1FD51 /* GeometryLab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0A158462EE29B6500E1FD51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A1586D2EE29B7400E1FD51 /* Main.storyboard in Resources */,
+				D0A1586E2EE29B7400E1FD51 /* Assets.xcassets in Resources */,
+				D05A77E92F856AA7006A34B6 /* SolarSystemDemo.gif in Resources */,
+				D0A1586F2EE29B7400E1FD51 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0A158442EE29B6500E1FD51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A1586B2EE29B7400E1FD51 /* AppDelegate.swift in Sources */,
+				D0A158812EE29DB000E1FD51 /* Grid.metal in Sources */,
+				D0A158A02EE2BA6400E1FD51 /* MetalMath.metal in Sources */,
+				D0A158B12EE2DC3300E1FD51 /* PlanetData.swift in Sources */,
+				D0A158B22EE2DC3300E1FD51 /* CelestialBody.swift in Sources */,
+				D0A158BA2EE2E2CA00E1FD51 /* OrbitPath.metal in Sources */,
+				D0A158AB2EE2BAF600E1FD51 /* SceneRenderer.swift in Sources */,
+				D0A158952EE2B93700E1FD51 /* Mesh.swift in Sources */,
+				D0A1586C2EE29B7400E1FD51 /* ViewController.swift in Sources */,
+				D0A158972EE2B93E00E1FD51 /* Triangle.swift in Sources */,
+				D0A158B42EE2DC6700E1FD51 /* Planet.metal in Sources */,
+				D0A1588E2EE2B91C00E1FD51 /* Matrix.swift in Sources */,
+				D0A158A52EE2BACD00E1FD51 /* GridNode.swift in Sources */,
+				D0A1587F2EE29D9A00E1FD51 /* TriangleRenderer.swift in Sources */,
+				D0A1588A2EE2B8D900E1FD51 /* BaseRenderer.swift in Sources */,
+				D0A158AD2EE2D80300E1FD51 /* MeshRenderer.swift in Sources */,
+				D0A1587B2EE29D8000E1FD51 /* GridRenderer.swift in Sources */,
+				D0A158A22EE2BA6C00E1FD51 /* Noise.metal in Sources */,
+				D0A158A72EE2BAD400E1FD51 /* AxisNode.swift in Sources */,
+				D0A158832EE29DB500E1FD51 /* Axis.metal in Sources */,
+				D0A158882EE2B8C300E1FD51 /* MetalView.swift in Sources */,
+				D0A158772EE29CC300E1FD51 /* GPUDevice.swift in Sources */,
+				D0A158902EE2B92300E1FD51 /* Transform.swift in Sources */,
+				D05A77E72F856A78006A34B6 /* README.md in Sources */,
+				D0A158852EE29DBD00E1FD51 /* Triangle.metal in Sources */,
+				D0A158922EE2B92A00E1FD51 /* GeometryUtils.swift in Sources */,
+				D0A158752EE29C8E00E1FD51 /* MetalCommon.metal in Sources */,
+				D0A158B62EE2DD8C00E1FD51 /* PlanetRenderer.swift in Sources */,
+				D0A158B82EE2DEE500E1FD51 /* OrbitPathRenderer.swift in Sources */,
+				D0A158A92EE2BADC00E1FD51 /* MeshNode.swift in Sources */,
+				D0A158992EE2B94500E1FD51 /* Axis.swift in Sources */,
+				D0A1587D2EE29D8E00E1FD51 /* AxisRenderer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0A158642EE29B7400E1FD51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0A158632EE29B7400E1FD51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0A158662EE29B7400E1FD51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0A158652EE29B7400E1FD51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0A1585C2EE29B6700E1FD51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48S84T7Z5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = GeometryLab/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_HEADER_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = co.wizard.architect.GeometryLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = GeometryLab/Core/bridging.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0A1585D2EE29B6700E1FD51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48S84T7Z5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = GeometryLab/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_HEADER_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = co.wizard.architect.GeometryLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = GeometryLab/Core/bridging.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0A1585E2EE29B6700E1FD51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0A1585F2EE29B6700E1FD51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0A158432EE29B6500E1FD51 /* Build configuration list for PBXProject "GeometryLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A1585E2EE29B6700E1FD51 /* Debug */,
+				D0A1585F2EE29B6700E1FD51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0A1585B2EE29B6700E1FD51 /* Build configuration list for PBXNativeTarget "GeometryLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A1585C2EE29B6700E1FD51 /* Debug */,
+				D0A1585D2EE29B6700E1FD51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0A158402EE29B6500E1FD51 /* Project object */;
+}
